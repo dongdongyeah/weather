@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/iconfont.css" type="text/css">
+  <link rel="stylesheet" href="css/index.css" type="text/css">
+</head>
+<body>
+  <div class='wraper'>
+    <div class='box'>
+      <div class='search-box' id='search-box'>
+        <input class='input' id='input' type='text' placeholder='请输入您的城市' value=''>
+        <i id='search' class="iconfont icon-sousuo"></i>
+      </div>
+      <div class='weather-box'>
+        <div>城市：<span class='city' id='city'></span></div>
+        <div>温度：<span class='temp' id='temp'></span></div>
+        <div>天气：<span class='weather' id='weather'></span></div>
+      </div>
+    </div>
+    <ul class='citylist' style='display: none'>
+    </ul>
+  </div>
+  <script src='https://code.jquery.com/jquery-1.11.3.min.js'></script>
+  <script src='js/index.js'></script>
+  <script src='js/city.js'></script>
+  <script type="text/javascript" src="js/city.json?cb=citydata"></script>
+</body>
+</html>
